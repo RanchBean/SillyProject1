@@ -17,33 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhe-CO-Die">
-                                <rect key="frame" x="419" y="28" width="46" height="30"/>
-                                <state key="normal" title="Blue">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0057208147373257745" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="btF-bg-NyG">
+                                <rect key="frame" x="165" y="66" width="118" height="31"/>
                                 <connections>
-                                    <action selector="blueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GWu-RU-cGw"/>
+                                    <action selector="changeRed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Eng-8d-35e"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2E-mh-PfQ">
-                                <rect key="frame" x="131" y="28" width="46" height="30"/>
-                                <state key="normal" title="Red">
-                                    <color key="titleColor" red="0.030356831500681025" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZuA-Y5-xf1">
+                                <rect key="frame" x="165" y="112" width="118" height="31"/>
                                 <connections>
-                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkD-Pg-9EO"/>
+                                    <action selector="changeGreen:" destination="BYZ-38-t0r" eventType="valueChanged" id="P15-G4-Ifg"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfU-X9-hpg">
-                                <rect key="frame" x="277" y="28" width="46" height="30"/>
-                                <state key="normal" title="Green">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L8u-gd-G0T">
+                                <rect key="frame" x="200" y="150" width="51" height="31"/>
                                 <connections>
-                                    <action selector="greenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ns0-Ke-6bP"/>
+                                    <action selector="changeBlue:" destination="BYZ-38-t0r" eventType="valueChanged" id="jJG-Ss-cll"/>
                                 </connections>
-                            </button>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
